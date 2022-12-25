@@ -36,9 +36,9 @@ public class Restaurant implements Runnable {
 
             }
             waitingForPickup = true;
-            System.out.println("Coffee Machine: Making Food Number " + foodNumber++);
+            System.out.println("Restaurant: Making Food Number " + foodNumber++);
             Restaurant.lock.notifyAll();
-            System.out.println("Coffee Machine: Telling the waiter to get the food\n");
+            System.out.println("Restaurant: Telling the waiter to get the food\n");
         }
     }
 
